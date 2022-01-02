@@ -162,7 +162,7 @@ main{
     position: relative;
 }
 
-main .login-box{
+main .box{
 
     margin: 0;
     position: absolute;
@@ -183,22 +183,68 @@ main .login-box{
 
 }
 
-main .login-box .head{
+main .box .head{
     text-align: center;
     padding: 5%;
 }
 
-main .login-box .main{
+main .box .head input{
+    display: inline-block;
+    margin: 5%;
+    background-color: #FF8A65;
+    padding: 3%;
+    cursor: pointer;
+}
+
+#loginbtn{
+    background-color: red;
+}
+
+/* #left-head{
+    background-color: pink;
+    padd
+} */
+
+main .box .main{
     padding: 5%;
     text-align: center;
 }
 
-main .login-box .main .login .id-sect label{
+main .box .main .login .id-sect label{
     position: relative;
     left: 0;
 }
 
-main .login-box .login .text-box{
+main .box .login .text-box{
 
     margin: auto;
+}
+
+main .box .main .signup{
+    padding: 5%;
+    text-align: center;
+}
+
+#dissolve-two{
+    display: none;
+}
+footer{
+
+    text-align: center;
+    padding: 20px 0;
+    color: #999;
+    font-size: .9rem;
+
+}
+
+#verify{
+    display: inline-block;
+    margin: 5%;
+    background-color: #FF8A65;
+    padding: 3%;
+    cursor: pointer;
+}
+
+#active{
+    color: #BF360C;
 }

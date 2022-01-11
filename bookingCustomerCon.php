@@ -10,6 +10,7 @@ $conn=mysqli_connect("localhost", "root", "", "raj");
 
 
     $date = $_POST['date'];
+    $_SESSION['date']=$date;
 
     if ( !isset($_POST['date']) && strlen($_POST['date']) < 1  )
         header("Location: bookingCustomer.php?err=".urlencode("Please enter a date"));

@@ -1,7 +1,6 @@
 <?php
     global $date;
     $date = $_GET['val'];
-    include('bookingCustomer2Con.php');
 ?>
 
 
@@ -13,11 +12,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?version=51">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/styleBooking.css">
+    <link rel="stylesheet" href="css/styleBooking.css?version=51">
 </head>
 
 <body>
@@ -73,10 +72,9 @@
                             <option value="4">Meetings</option>
                         </select>
                     </div>
-
+                
                     <h4>Services</h4>
 
-                    
                     <?php
 
                         $conn=mysqli_connect("localhost", "root", "", "raj");
@@ -88,13 +86,11 @@
                         $query = mysqli_query($conn, "SELECT `name` FROM `services`");
                         while($fetch=mysqli_fetch_array($query)){
                             $val = $fetch['name'];
-                            echo "<input type='checkbox' name='service' id='$val' value='$val'><label for='$val'>$val</label><br/>";
+                            echo "<input type='checkbox' name='service[]' id='$val' value='$val'><label for='$val' text-align='left'>$val</label><br/>";
                         }
 
                     ?>
 
-                
-                    
                     <input type="submit" name="submit" value="submit">
                 </form>
             </div>

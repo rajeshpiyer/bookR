@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 /*header("Location: game.php?name=".urlencode($_POST['who']));*/
 
@@ -50,8 +51,17 @@ if (!empty($txt1)){
 	                        				else{
 		                        				echo "Error: ".$sql."<br>".$conn->error;
 	                        				}
-	                        				$conn->close();
-											header("Location: index.php?err=".urlencode("Submission Successful"));
+
+
+	                        				
+											if ($txt6 == 2){
+												header("Location: furtherDetailsService.php?err=".urlencode($txt1));
+												$_SESSION['name']=$txt1;
+											}
+											else{
+												header("Location: index.php?err=".urlencode("Submission Successful"));
+											}
+											
                         				}
                     				}
 								}

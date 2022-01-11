@@ -25,7 +25,7 @@ else{
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?version=51">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
 </head>
@@ -70,14 +70,14 @@ else{
             </div>
 
             <div class="main">
-                <form method="post" class="login" id="dissolve-one" action="loginConnection.php">
+                <form method="post" class="basicInput" id="dissolve-one" action="loginConnection.php">
 
-                    <div class="id-sect">
+                    <div class="element">
                     <label for="id">Email ID </label>
                     <input type="text" name="idLogin" class="text-box" placeholder="email-id" required>
                     </div>
 
-                    <div class="pass-sect">
+                    <div class="element">
                     <label for="pass">Password </label>
                     <input type="password" name="passLogin" class="text-box" placeholder="password" required>
                     </div>
@@ -93,7 +93,7 @@ else{
 
                 </form>
 
-                <form method="post" class="signup" id="dissolve-two" action="signup_connection.php">
+                <form method="post" class="basicInput" id="dissolve-two" action="signup_connection.php">
 
                     <div class="element">
                     <label for="fname">First Name </label>
@@ -128,12 +128,12 @@ else{
                         </select>
                     </div>
                     
-                    <div class="pass-sect">
+                    <div class="element">
                     <label for="pass">Password </label>
                     <input type="password" id="pass" name="pass" class="text-box" placeholder="password" required>
                     </div>
 
-                    <div class="pass-sect">
+                    <div class="element">
                     <label for="confPass">Confirm Password </label>
                     <input type="password" name="confPass" id="confPass" class="text-box" placeholder="Confirm Password" required>
                     </div>

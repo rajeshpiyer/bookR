@@ -7,6 +7,7 @@
 body{
     font-family: 'Source Sans Pro', sans-serif;
     
+    
 }
 
 /* @media only screen and (min-height: 600px){
@@ -17,7 +18,7 @@ body{
 } */
 header{
 
-    background-color: #FFEBEE;
+    background-color: #000000;
     height: 10%;
     display: flex;
     justify-content: space-between;
@@ -37,7 +38,7 @@ header .heading{
 
 header .heading h1{
 
-    color: rgb(112, 8, 8);
+    color: rgb(255, 255, 255);
     padding: 20px 10px 20px 20px;
 
 }
@@ -53,7 +54,7 @@ header .heading .button{
 
 header .heading .button div{
 
-    background-color: rgb(112, 8, 8);
+    background-color: rgb(255, 255, 255);
     height: 4px;
     margin: 5px 5px;
     border-radius: 25px;
@@ -82,7 +83,7 @@ header .heading .button div{
 .button:hover #two, .button:hover #one, .button:hover #three{
 
     width: 30px;
-    background-color: #000;
+    background-color: rgb(255, 255, 255);
     
 }
 
@@ -102,7 +103,7 @@ header .head .link{
 header .head .link a{
 
     text-decoration: none;
-    color: #000;
+    color: rgb(255, 255, 255);
     /* border-radius: 25px; */
     /* margin: 10px; */
     /* padding: 10px 15px; */
@@ -127,12 +128,12 @@ header .head .link .link1{
 header .head .link:hover .link1{
 
     width: 100%;
-    background-color: rgb(112, 8, 8);
+    background-color: rgb(252, 209, 209);
 
 }
 header .head .active{
 
-    color: #000;
+    color: rgb(252, 209, 209);
 }
 
 header .head a:hover{
@@ -151,7 +152,6 @@ main{
 
     display: flex;
     justify-content: center;
-
     margin: 0;
     padding: 0;
     background-image: url("../images/background.jpg");
@@ -166,10 +166,11 @@ main .box{
 
     margin: 0;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #fff;
-    padding: 1.5%;
+    top: 10%;
+    /*transform: translateY(50%);*/
+    background-color: rgb(0, 0, 0);
+    padding: 10%;
+    border-radius: 25px;
     /* box-shadow:
   0 2.8px 2.2px rgba(0, 0, 0, 0.034),
   0 6.7px 5.3px rgba(0, 0, 0, 0.048),
@@ -177,9 +178,10 @@ main .box{
   0 22.3px 17.9px rgba(0, 0, 0, 0.072),
   0 41.8px 33.4px rgba(0, 0, 0, 0.086),
   0 100px 80px rgba(0, 0, 0, 0.12);*/
-  opacity: .8;
+    opacity: .8;
+    color: rgb(255, 255, 255);
 
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 
 }
 
@@ -190,14 +192,15 @@ main .box .head{
 
 main .box .head input{
     display: inline-block;
+    border: none;
     margin: 5%;
-    background-color: #FF8A65;
+    background-color: #ffffff;
     padding: 3%;
     cursor: pointer;
+    border-radius: 5px;
+    text-decoration-color: rgb(0, 0, 0);
 }
 
-#loginbtn{
-    background-color: red;
 }
 
 /* #left-head{
@@ -206,23 +209,30 @@ main .box .head input{
 } */
 
 main .box .main{
+    
     padding: 5%;
     text-align: center;
 }
 
-main .box .main .login .id-sect label{
+main .box .main .basicInput .element label{
+    padding: auto;
+    margin-top: 25px;
+    display: inline-block;
     position: relative;
-    left: 0;
+    /*left: 0;*/
+    align-content: center;
 }
 
-main .box .login .text-box{
+main .box .basicInput .text-box{
 
     margin: auto;
-}
-
-main .box .main .signup{
-    padding: 5%;
-    text-align: center;
+    border : none;
+    color: white;
+    background-color: transparent;
+    opacity: .9;
+    border-bottom: 1px solid #ffffff;
+    padding: 5px 10px;
+    
 }
 
 #dissolve-two{
@@ -230,6 +240,8 @@ main .box .main .signup{
 }
 footer{
 
+    position: inherit;
+    margin-top: auto;
     text-align: center;
     padding: 20px 0;
     color: #999;
@@ -246,5 +258,9 @@ footer{
 }
 
 #active{
-    color: #BF360C;
+    color: #f8cabb;
+}
+
+main .box .main .book .service{
+    text-align: left;
 }

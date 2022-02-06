@@ -22,10 +22,10 @@
                 header("Location: customerHome.php?id=".urlencode($fetch['users_id']));
 
             else if($fetch['u_type'] == 2)
-                header("Location: serviceProviderHome.html?id=".urlencode($fetch['users_id']));
+                header("Location: serviceProviderHome.php?id=".urlencode($fetch['users_id']));
 
             else{
-                header("Location: adminHome.html?id=".urlencode($fetch['users_id']));
+                header("Location: adminHome.php?id=".urlencode($fetch['users_id']));
             }
 	  
 	        $_SESSION['user']=$fetch['firstname'];

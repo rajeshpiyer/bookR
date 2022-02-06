@@ -49,12 +49,12 @@ else{
                     Home               
                 </a>
             </div>
-            <div class="link">
+            <!--<div class="link">
                 <div class="link1"></div>
                 <a href="registration.html">
                     Registration
                 </a>
-            </div>
+            </div>-->
         </nav>
 
         
@@ -74,7 +74,7 @@ else{
 
                     <div class="element">
                     <label for="id">Email ID </label>
-                    <input type="text" name="idLogin" class="text-box" placeholder="email-id" required>
+                    <input type="email" name="idLogin" class="text-box" placeholder="email-id" required>
                     </div>
 
                     <div class="element">
@@ -82,7 +82,7 @@ else{
                     <input type="password" name="passLogin" class="text-box" placeholder="password" required>
                     </div>
 
-                    <input type="submit" name="submit" value="Login">
+                    <input type="submit" class = "submitbtn" name="submit" value="Submit">
 
                     <?php
 
@@ -107,12 +107,12 @@ else{
 
                     <div class="element">
                     <label for="email">E-Mail ID </label>
-                    <input type="text" name="email" id="email" class="text-box" placeholder="E-Mail ID" required>
+                    <input type="email" name="email" id="email" class="text-box" placeholder="E-Mail ID" required>
                     </div>
 
                     <div class="element">
                         <label for="mob">Mobile Number </label>
-                        <input type="text" name="mob" id="mob" class="text-box" placeholder="Mobile Number" required>
+                        <input type="tel" minlength = "10" maxlength = "10" pattern = "\d*" name="mob" id="mob" class="text-box" placeholder="Mobile Number" required>
                     </div>
 
                     <div class="element">
@@ -138,7 +138,7 @@ else{
                     <input type="password" name="confPass" id="confPass" class="text-box" placeholder="Confirm Password" required>
                     </div>
 
-                    <input type="submit" name="submit" value="Sign Up">
+                    <input type="submit" class = "submitbtn" name="submit" value="Submit">
 
                 </form>
             </div>

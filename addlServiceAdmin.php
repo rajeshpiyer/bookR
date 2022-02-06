@@ -67,7 +67,41 @@
             </div>
             <div class="main">
                 <ol class="services">
-                    <li>There will be content here <button>Delete</button></li>
+                <?php
+                        function admindelete($val){
+                            $conn=mysqli_connect("localhost", "root", "", "raj");
+
+                            if(!$conn){
+                                die("Error: Failed to connect to database!");
+                            }
+    
+                            $query = mysqli_query($conn, "UPDATE TABLE `services` SET `approved` = 0 WHERE `Name` = '$val'");
+                            $row = mysqli_num_rows($query);
+                            header("Location: adminHome.php?");
+                        }
+                        
+                                         
+                        $conn=mysqli_connect("localhost", "root", "", "raj");
+
+                        if(!$conn){
+                            die("Error: Failed to connect to database!");
+                        }
+
+                        $query = mysqli_query($conn, "SELECT `name`,`Cost Criteria` FROM `services` WHERE `approved`=1");
+                        $row = mysqli_num_rows($query);
+                        echo "<form method=post>";
+                        while($row=mysqli_fetch_array($query)){
+                            $val = $row['name'];
+                            $val1 = $row['Cost Criteria'];
+                            echo" <li>" .$val.': '.$val1 ."</li><input type=submit name=$val class=button value=Delete />";
+                        }
+                        $servicename = $_POST['name'];
+                        if(array_key_exists('delete', $_POST)) {
+                            admindelete($POST['value']);
+                        }
+                        echo "</form>";
+                ?>
+                   
                 </ol>
 
                 <input type="button" value="Add" onclick="addService();">
@@ -75,6 +109,7 @@
                 <form class="details">
                     <div class="hidden" id="hide">
                         <div class="element">
+
                             <label for="service">Service Name </label>
                             <input type="text" name="service" class="service" placeholder="Service Name" required>
                         </div>

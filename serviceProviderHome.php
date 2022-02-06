@@ -1,3 +1,12 @@
+<?php
+    session_start();
+
+    if ( ! isset($_GET['id']) || strlen($_GET['id']) < 1  ) {
+        die('Login parameter missing');
+    }
+    $_SESSION['id'] = $_GET['id'];
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,19 +44,13 @@
             </div>
             <div class="link">
                 <div class="link1"></div>
-                <a href="assignWorkManager.html">
-                    Assign Work
+                <a href="viewWorkProvider.php">
+                    View Work
                 </a>
             </div>
             <div class="link">
                 <div class="link1"></div>
-                <a href="addlServiceAdmin.html">
-                    Services
-                </a>
-            </div>
-            <div class="link">
-                <div class="link1"></div>
-                <a href="index.html">
+                <a href="index.php">
                     Log out
                 </a>
             </div>

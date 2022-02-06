@@ -29,25 +29,25 @@
         <nav class="head">
             <div class="link">
                 <div class="link1"></div>
-                <a href="serviceProviderHome.html">
+                <a href="#" id="active">
                     Home
                 </a>
             </div>
             <div class="link">
                 <div class="link1"></div>
-                <a href="#" id="active">
-                    View Work
+                <a href="assignWorkManager.php">
+                    Assign Work
                 </a>
             </div>
             <div class="link">
                 <div class="link1"></div>
-                <a href="#">
-                    Update Profile
+                <a href="addlServiceAdmin.php">
+                    Services
                 </a>
             </div>
             <div class="link">
                 <div class="link1"></div>
-                <a href="index.html">
+                <a href="index.php">
                     Log out
                 </a>
             </div>
@@ -58,29 +58,6 @@
     </header>
 
     <main>
-
-
-        <div class="box">
-
-            <div class="head">
-                <h3>Works</h3>
-            </div>
-            <div class="main">
-
-                <form class="book">
-
-                    <div class="element">
-                        <label for="type">There will be content here<br> </label>
-                        <select name="type" id="type">                            
-                        </select>
-                    </div>
-                    
-                    <input type="button" name="print" value="print">
-                </form>
-            </div>
-        </div>
-
-        </div>
 
     </main>
 

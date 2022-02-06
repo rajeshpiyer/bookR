@@ -49,12 +49,7 @@
                     Booking
                 </a>
             </div>
-            <div class="link">
-                <div class="link1"></div>
-                <a href="#">
-                    Update Profile
-                </a>
-            </div>
+           
             <div class="link">
                 <div class="link1"></div>
                 <a href="index.php">

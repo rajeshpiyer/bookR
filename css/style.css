@@ -25,6 +25,7 @@ header{
     z-index: 9;
     width: 100%;
     opacity: .9;
+    position: fixed;
 
 }
 
@@ -116,7 +117,7 @@ header .head .link a{
 
 header .head .link .link1{
 
-    background-color: #FFEBEE;
+    background-color: #000000;
     width: 10px;
     height: 4px;
     /* margin-left: 10px; */
@@ -155,10 +156,10 @@ main{
     margin: 0;
     padding: 0;
     background-image: url("../images/background.jpg");
-    background-repeat: no-repeat;
+    background-repeat:repeat-y;
     background-size: cover;
     background-position: center center;
-    height: 600px;
+    height: 1000px;
     position: relative;
 }
 
@@ -169,7 +170,7 @@ main .box{
     top: 10%;
     /*transform: translateY(50%);*/
     background-color: rgb(0, 0, 0);
-    padding: 10%;
+    padding: 5%;
     border-radius: 25px;
     /* box-shadow:
   0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -187,21 +188,20 @@ main .box{
 
 main .box .head{
     text-align: center;
-    padding: 5%;
+    padding: 1%;
 }
 
 main .box .head input{
     display: inline-block;
     border: none;
-    margin: 5%;
+    margin: 1%;
     background-color: #ffffff;
-    padding: 3%;
+    padding: 5%;
     cursor: pointer;
     border-radius: 5px;
     text-decoration-color: rgb(0, 0, 0);
 }
 
-}
 
 /* #left-head{
     background-color: pink;
@@ -215,12 +215,12 @@ main .box .main{
 }
 
 main .box .main .basicInput .element label{
-    padding: auto;
-    margin-top: 25px;
+    padding: 5%;
+    margin-top: 10px;
     display: inline-block;
     position: relative;
     /*left: 0;*/
-    align-content: center;
+    text-align: center;
 }
 
 main .box .basicInput .text-box{
@@ -233,6 +233,16 @@ main .box .basicInput .text-box{
     border-bottom: 1px solid #ffffff;
     padding: 5px 10px;
     
+}
+main .box .main .basicInput .submitbtn{
+    display: inline-block;
+    border: none;
+    margin: 5%;
+    background-color: #f1b024;
+    padding: 5%;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration-color: rgb(0, 0, 0);
 }
 
 #dissolve-two{

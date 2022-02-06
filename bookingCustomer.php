@@ -83,6 +83,8 @@
                     <form class="details" method="post" action="bookingCustomerCon.php">
 
                         <div class="element">
+                       
+                    
                             <label for="date">Date </label>
                             <input type="date" name="date" class="text-box" id="date" required>
                         </div>
